@@ -1,0 +1,12 @@
+[project]
+name = "minigit"
+version = "0.1.0"
+description = "A small Git clone in pure Python that writes repositories the real git can read"
+requires-python = ">=3.11"
+
+[project.scripts]
+minigit = "minigit.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
